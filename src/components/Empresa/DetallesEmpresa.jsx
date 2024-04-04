@@ -4,7 +4,7 @@ import { getEmpresaById } from '../../services/services';
 import { useParams } from 'react-router-dom';
 
 const DetallesEmpresa = () => {
-    const [empresa, setEmpresa] = useState(null);
+    const [empresa, setEmpresa] = useState([]);
     const { id } = useParams();
 
     useEffect(() => {
